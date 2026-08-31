@@ -11,6 +11,6 @@ export class DocsComponent {
   protected language = 'TypeScript';
 
   protected selectLanguage(): void {
-    this.language = 'Python';
+    this.language = this.language === 'TypeScript' ? 'Python' : 'TypeScript';
   }
 }
